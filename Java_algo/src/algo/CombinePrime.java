@@ -10,7 +10,7 @@ import java.util.Set;
 
 class CombinePrime {
 
-	public static void main(String[] args) {
+	public static void CombinePrime() {
 
 		int answer = 0;
 

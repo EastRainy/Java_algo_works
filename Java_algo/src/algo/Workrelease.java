@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Workrelease {
     
-    public static void main(String[] args) {
+    public static void Workrelease() {
         int[] answer;
         int[] progresses ={93, 30, 55};
         int[] speeds ={1,30,5};
