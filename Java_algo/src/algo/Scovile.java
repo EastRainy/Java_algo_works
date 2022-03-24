@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
 */
 public class Scovile {
     
-    public static void Scovile() {
+    public static void scovile() {
         
         int[] scoville = {1, 2, 3, 9, 10, 12};
         int K=7;

@@ -4,7 +4,7 @@ package algo;
 class LenofLast{
 
 
-    public static void LenofLast(){
+    public static void lenofLast(){
 
         System.out.println(lengthOfLastWord("Hello World"));
 

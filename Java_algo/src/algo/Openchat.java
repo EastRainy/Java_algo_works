@@ -16,7 +16,7 @@ UID/닉네임 해시로 관리하면서 최종출력시 기록된 UID를 닉네�
 class Openchat{
 
 
-    public static void Openchat() {
+    public static void openchat() {
         
         String[] recode = {"Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"};
         ArrayList<String> pre_ans = new ArrayList<String>();

@@ -10,7 +10,7 @@ class HouseRobber{
 
     */
 
-    public static void HouseRobber(){
+    public static void houseRobber(){
 
         int[] input = {1,2,3,1};
 

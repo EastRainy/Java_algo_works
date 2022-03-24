@@ -6,7 +6,7 @@ public class Stock {
     /* 자기 가격보다 떨어지지 않을 때 까지 걸린 시간 문제*/
 
     
-    public static void Stock() {
+    public static void stock() {
         
 
         int[] prices = {1, 2, 3, 2, 3};
