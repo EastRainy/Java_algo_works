@@ -1,16 +1,14 @@
 package algo;
 
-public class Main {
+public class Main{
     
     public static void main(String[] args){
 
-        int[] people = {3,2,2,1};
-        int limit = 3;
+        int[] nums = {1,3,4,2,2};
+
+        System.out.println(new FindDuplicate().findDuplicate(nums));
+
         
-        System.out.println(new NumRescueBoats().numRescueBoats(people, limit));
-      
-
-
     }
 
 }
