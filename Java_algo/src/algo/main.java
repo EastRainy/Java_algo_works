@@ -6,13 +6,11 @@ public class Main{
     
     public static void main(String[] args){
 
-      int[][] board = {{0,1,0},{0,0,1},{1,1,1},{0,0,0}};
+    
+        String[] ops = {"5","2","C","D","+"};
 
-      new GameOfLife().gameOfLife(board);
+        System.out.println(new BasballGame().calPoints(ops));
 
-      for(int i=0; i<board.length;i++){
-          System.out.println(Arrays.toString(board[i]));
-      }
     }
 
 }
