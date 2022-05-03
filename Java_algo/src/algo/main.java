@@ -6,10 +6,10 @@ public class Main{
     
     public static void main(String[] args){
 
-    
-        String[] ops = {"5","2","C","D","+"};
+ 
+        int[] nums = {2,6,4,8,10,9,15};
 
-        System.out.println(new BasballGame().calPoints(ops));
+        System.out.println(new FindUnsortedSubarray().findUnsortedSubarray(nums));
 
     }
 
