@@ -1,16 +1,20 @@
 package algo;
 
-import java.util.Arrays;
+import java.util.List;
 
 public class Main{
     
     public static void main(String[] args){
 
- 
-        int[] nums = {2,6,4,8,10,9,15};
 
-        System.out.println(new FindUnsortedSubarray().findUnsortedSubarray(nums));
+        
+        List<String> ans = new LetterCombinations().letterCombinations("9");
 
+        System.out.println(ans.size());
+        for(int i=0; i<ans.size();i++){
+            System.out.print(ans.get(i) +" ");
+        }
+        
     }
 
 }
