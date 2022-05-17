@@ -9,7 +9,7 @@ public class LetterCombinations {
         char crr;
         TreeNode leftNode, middleNode, rightNode, exepNode;
 
-        public TreeNode(String digits, int w){
+        TreeNode(String digits, int w){
             if(digits.length()>0){
                 crr = (char)(keypad(digits.charAt(0))+w);
                 if(digits.length()>1){
@@ -28,12 +28,12 @@ public class LetterCombinations {
                 }
             }
         }
-        public void addListAll(char c, List<String> input, List<String> ans){
+        void addListAll(char c, List<String> input, List<String> ans){
             for(int i=0; i<input.size(); i++){
                 ans.add(crr+(input.get(i)).toString());
             }
         }
-        public List<String> returnString(){
+        List<String> returnString(){
 
             List<String> ans = new LinkedList<String>();
 
@@ -50,7 +50,7 @@ public class LetterCombinations {
             return ans;
         }
     }
-    public char keypad(char c){
+    char keypad(char c){
         int input = Integer.parseInt(""+c);
         char ans = (char)('a'+(input-2)*3);
         if(input>7){ans++;}
@@ -61,9 +61,7 @@ public class LetterCombinations {
         TreeNode[] root = new TreeNode[4];
         List<String> ans = new LinkedList<String>();
 
-        if(digits.length()<=0){
-            return ans;
-        }
+        if(digits.length()<=0){return ans;}
         else{
             for(int i=0; i<3; i++){root[i] = new TreeNode(digits, i);}
             if(digits.charAt(0)=='7'||digits.charAt(0)=='9'){root[3] = new TreeNode(digits, 3);}
