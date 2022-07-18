@@ -7,7 +7,7 @@ import java.util.Comparator;
 public class SmallestValueoftheRearrangedNumber {
 
     //tactic
-    //input쪼개기 -> 
+    //input쪼개기 -> 정렬(오름/내림) -> 수 구성 후 반환
     public long smallestNumber(long num) {
         
         
@@ -23,10 +23,12 @@ public class SmallestValueoftheRearrangedNumber {
         }
 
         tmp=0;
+        //아무것도 안들어왔을떄 처리
         if(ls.size()==0){
             return 0;
         }
         if(num>=0){
+            //양수면 0 다음 가장 큰 수가 첫번째, 그 후 0처리 후 작은수부터 구성
             ls.sort(Comparator.naturalOrder());
             int cnt=0;
             while(ls.get(cnt)==0){
@@ -42,6 +44,7 @@ public class SmallestValueoftheRearrangedNumber {
             }
         }
         else{
+            //num이 음수면 큰수->작은수 순으로만 구성
             ls.sort(Comparator.reverseOrder());
             for(int i=0; i<ls.size(); i++){
                 tmp *= 10;
