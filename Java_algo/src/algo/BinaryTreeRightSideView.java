@@ -37,7 +37,7 @@ public class BinaryTreeRightSideView {
     }
 
 }
-/*
+/* 
 class TreeNode {
         int val;
         TreeNode left;
@@ -48,6 +48,6 @@ class TreeNode {
             this.val = val;
             this.left = left;
             this.right = right;
-        }
     }
+}
 */
