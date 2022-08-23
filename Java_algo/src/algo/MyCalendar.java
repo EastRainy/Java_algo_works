@@ -12,6 +12,7 @@ public class MyCalendar {
         ts = new TreeSet<int[]>((int[] a, int[] b)-> a[0]-b[0]);
 
         //TreeSet을 이용
+        //TreeSet(compare => 해당 compare로 정렬되는 TreeSet)
         //==>자신에 대하여 바로 큰/작은 값을 floor, celling으로 추출 가능
     }
     
