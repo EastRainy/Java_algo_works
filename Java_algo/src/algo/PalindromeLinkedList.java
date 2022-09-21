@@ -1,7 +1,7 @@
 package algo;
 
 public class PalindromeLinkedList {
-
+/* 
     private class ListNode {
         int val;
         ListNode next;
@@ -26,7 +26,7 @@ public class PalindromeLinkedList {
         front = front.next;
         return checkIn && isEq;
 
-    }
+    }*/
 }
 
 /*

@@ -1,10 +1,10 @@
 
 package algo;
 
-import java.util.HashSet;
+//import java.util.HashSet;
 
 class PseudoPalindromicPaths {
-
+    /*
     public int pseudoPalindromicPaths (TreeNode root) {
        
        HashSet<Integer> hs = new HashSet<Integer>();
@@ -33,5 +33,5 @@ class PseudoPalindromicPaths {
 
        return ans;
    }
-   
+   */
 }
