@@ -1,32 +1,26 @@
 package algo;
 
-import java.util.Hashtable;
-import java.util.Enumeration;
+import java.util.HashMap;
 
 public class MinimumRoundstoComplete {
     public int minimumRounds(int[] tasks) {
 
-        int ans = 0, el;
+        int ans = 0;
 
-        Hashtable<Integer, Integer> ht = new Hashtable<Integer, Integer>();
+        HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
 
-        for(int i=0; i<tasks.length; i++){
-            if(!ht.containsKey(tasks[i])){
-                ht.put(tasks[i],1);
-            }
-            else{
-                ht.put(tasks[i], ht.get(tasks[i])+1);
-            }
+        for(int i:tasks){
+
+            hm.put(i, hm.getOrDefault(i, 0)+1);
+
         }
 
-        Enumeration<Integer> vals = ht.elements();
-
-        while(vals.hasMoreElements()){
-            el = vals.nextElement().intValue();
-            if(el == 1) return -1;
-            
-            ans += (el+2)/3;
+        for(int x : hm.values()){
+            if(x==1) return -1;
+            ans += (x+2)/3;
         }
+
         return ans;
     }
 }
+/* HashTable -> hashmap으로 변경, Enumeration 제거 */
